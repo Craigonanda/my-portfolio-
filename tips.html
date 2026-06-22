@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tip Craig | M-Pesa</title>
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="tips.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body class="tips-page">
+
+<header>
+<nav>
+<h2><a href="index.html">CRAIG</a></h2>
+<button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+<i class="fas fa-bars"></i>
+</button>
+<ul id="navMenu">
+<li><a href="index.html#home">Home</a></li>
+<li><a href="index.html#about">About</a></li>
+<li><a href="index.html#projects">Projects</a></li>
+<li><a href="index.html#chatbot">AI Chat</a></li>
+<li><a href="tips.html" class="active">Tips</a></li>
+<li><a href="index.html#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main class="tips-main">
+<section class="tips-hero">
+<p class="eyebrow">Support my work</p>
+<h1>M-Pesa Tips</h1>
+<p class="subtitle">
+Turn the volume knob to choose your tip amount, enter your M-Pesa number,
+and confirm the prompt on your phone.
+</p>
+</section>
+
+<div class="tips-layout">
+<div class="knob-panel">
+<div class="knob-wrap">
+<div class="knob-ring"></div>
+<div class="knob-dial" id="knobDial" aria-hidden="true">
+<div class="knob-indicator"></div>
+<span class="knob-icon"><i class="fas fa-volume-up"></i></span>
+</div>
+</div>
+
+<p class="knob-label">Drag or scroll the knob</p>
+
+<div class="amount-display">
+<span class="currency">KES</span>
+<span class="amount" id="tipAmount">500</span>
+</div>
+
+<input type="range" id="amountSlider" min="10" max="10000" step="10" value="500" class="sr-only" aria-label="Tip amount">
+</div>
+
+<div class="tip-form-panel">
+<h2>Send a tip</h2>
+
+<label for="phoneInput">M-Pesa phone number</label>
+<input type="tel" id="phoneInput" placeholder="e.g. 0712345678" autocomplete="tel">
+
+<div class="preset-row">
+<button type="button" class="preset" data-amount="100">100</button>
+<button type="button" class="preset" data-amount="250">250</button>
+<button type="button" class="preset" data-amount="500">500</button>
+<button type="button" class="preset" data-amount="1000">1000</button>
+</div>
+
+<button type="button" id="tipBtn" class="tip-btn">
+<i class="fas fa-mobile-alt"></i>
+Send STK Push
+</button>
+
+<p id="tipStatus" class="tip-status" role="status" aria-live="polite"></p>
+</div>
+</div>
+</main>
+
+<footer>
+<p>© 2026 Onanda Craig David</p>
+</footer>
+
+<script src="config.js"></script>
+<script src="nav.js"></script>
+<script src="tips.js"></script>
+</body>
+</html>

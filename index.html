@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Onanda Craig David</title>
+
+<link rel="stylesheet" href="index.css">
+
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+rel="stylesheet"
+/>
+
+</head>
+<body>
+
+<header>
+<nav>
+<h2>CRAIG</h2>
+
+<button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+<i class="fas fa-bars"></i>
+</button>
+
+<ul id="navMenu">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#chatbot">AI Chat</a></li>
+<li><a href="tips.html">Tips</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section id="home" class="hero">
+
+<div class="hero-content">
+
+<h1>ONANDA CRAIG DAVID</h1>
+
+<h3>IT Student | Cybersecurity Enthusiast | Full Stack Developer</h3>
+
+<p>
+Building secure software, AI solutions,
+automation systems and modern web applications.
+</p>
+
+<div class="buttons">
+<a href="#projects">View Projects</a>
+<a href="#contact">Hire Me</a>
+<a href="tips.html" class="tip-cta"><i class="fas fa-mobile-alt"></i> Send a Tip</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+I am an IT student passionate about cybersecurity,
+software engineering, AI systems and trading automation.
+
+I enjoy building Flask applications, Flutter mobile apps,
+networking solutions and secure software systems.
+</p>
+
+</section>
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Python</h3>
+<p>Flask, Automation, APIs</p>
+</div>
+
+<div class="card">
+<h3>Cybersecurity</h3>
+<p>CTFs, Auditing, Enumeration</p>
+</div>
+
+<div class="card">
+<h3>Networking</h3>
+<p>IPv4, IPv6, VLANs, SSH</p>
+</div>
+
+<div class="card">
+<h3>Databases</h3>
+<p>MongoDB, MySQL</p>
+</div>
+
+<div class="card">
+<h3>Flutter</h3>
+<p>Cross Platform Apps</p>
+</div>
+
+<div class="card">
+<h3>AI</h3>
+<p>Chatbots, Automation</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Trading Automation Bot</h3>
+<p>
+MACD based trading automation with trailing stop loss.
+</p>
+</div>
+
+<div class="card">
+<h3>Dating App</h3>
+<p>
+Flask dating platform with authentication.
+</p>
+</div>
+
+<div class="card">
+<h3>Zikora Music App</h3>
+<p>
+Spotify inspired Flutter application.
+</p>
+</div>
+
+<div class="card">
+<h3>Streaming Platform</h3>
+<p>
+Netflix-style streaming service with M-Pesa.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2>Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Web Development</h3>
+</div>
+
+<div class="card">
+<h3>Mobile Apps</h3>
+</div>
+
+<div class="card">
+<h3>Python Automation</h3>
+</div>
+
+<div class="card">
+<h3>Cybersecurity Consulting</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="chatbot">
+
+<h2>AI Assistant</h2>
+<p class="section-subtitle">Ask CraigGPT about my skills, projects, or how to work with me.</p>
+
+<div class="chat-container">
+
+<div id="messages" class="messages">
+<div class="message bot">
+<strong>CraigGPT:</strong> Hi! I'm Craig's portfolio assistant. Ask me anything about his work.
+</div>
+</div>
+
+<div class="chat-input">
+
+<input
+type="text"
+id="userInput"
+placeholder="Ask me anything..."
+autocomplete="off"
+>
+
+<button type="button" onclick="sendMessage()">
+<i class="fas fa-paper-plane"></i>
+Send
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<button id="chatToggle" class="chat-fab" aria-label="Open chat">
+<i class="fas fa-comment-dots"></i>
+</button>
+
+<div id="chatWidget" class="chat-widget" aria-hidden="true">
+<div class="chat-widget-header">
+<span>CraigGPT</span>
+<button id="chatClose" type="button" aria-label="Close chat">&times;</button>
+</div>
+<div id="widgetMessages" class="messages">
+<div class="message bot">
+<strong>CraigGPT:</strong> Need a quick answer? Ask me here.
+</div>
+</div>
+<div class="chat-input">
+<input type="text" id="widgetInput" placeholder="Type a message..." autocomplete="off">
+<button type="button" id="widgetSend"><i class="fas fa-paper-plane"></i></button>
+</div>
+</div>
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<form>
+
+<input type="text" placeholder="Name">
+
+<input type="email" placeholder="Email">
+
+<textarea placeholder="Message"></textarea>
+
+<button type="submit">
+Send Message
+</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Onanda Craig David
+</p>
+
+<div class="socials">
+
+<a href="https://github.com/Craigonanda" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+<a href="https://www.youtube.com/@transcender_000" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+<a href="https://www.linkedin.com/in/daudi-undefined-34b0a937a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+
+</div>
+
+</footer>
+
+<script src="config.js"></script>
+<script src="nav.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

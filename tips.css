@@ -1,0 +1,248 @@
+.tips-page header nav h2 a,
+.tips-page nav a.active {
+color: #38bdf8;
+}
+
+.tips-page header nav h2 a {
+text-decoration: none;
+color: white;
+}
+
+.tips-main {
+padding: 120px 8% 80px;
+max-width: 1100px;
+margin: 0 auto;
+}
+
+.tips-hero {
+text-align: center;
+margin-bottom: 50px;
+}
+
+.tips-hero .eyebrow {
+color: #38bdf8;
+text-transform: uppercase;
+letter-spacing: 0.12em;
+font-size: 0.85rem;
+margin-bottom: 10px;
+}
+
+.tips-hero h1 {
+font-size: clamp(2rem, 5vw, 3.2rem);
+margin-bottom: 12px;
+}
+
+.tips-hero .subtitle {
+color: #cbd5e1;
+max-width: 620px;
+margin: 0 auto;
+line-height: 1.6;
+}
+
+.tips-layout {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 30px;
+align-items: center;
+}
+
+.knob-panel,
+.tip-form-panel {
+background: #1e293b;
+border-radius: 20px;
+padding: 40px 30px;
+box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.knob-wrap {
+position: relative;
+width: 220px;
+height: 220px;
+margin: 0 auto 20px;
+}
+
+.knob-ring {
+position: absolute;
+inset: 0;
+border-radius: 50%;
+background: conic-gradient(from 225deg, #38bdf8, #0ea5e9, #1e293b 55%);
+padding: 8px;
+}
+
+.knob-ring::after {
+content: "";
+display: block;
+width: 100%;
+height: 100%;
+border-radius: 50%;
+background: #0f172a;
+}
+
+.knob-dial {
+position: absolute;
+inset: 18px;
+border-radius: 50%;
+background: linear-gradient(145deg, #334155, #1e293b);
+box-shadow: inset 0 8px 16px rgba(255, 255, 255, 0.08), 0 10px 25px rgba(0, 0, 0, 0.35);
+cursor: grab;
+touch-action: none;
+display: flex;
+align-items: center;
+justify-content: center;
+transform: rotate(-135deg);
+transition: transform 0.05s linear;
+}
+
+.knob-dial:active {
+cursor: grabbing;
+}
+
+.knob-indicator {
+position: absolute;
+top: 14px;
+left: 50%;
+width: 6px;
+height: 22px;
+margin-left: -3px;
+border-radius: 999px;
+background: #38bdf8;
+box-shadow: 0 0 12px rgba(56, 189, 248, 0.8);
+}
+
+.knob-icon {
+font-size: 2rem;
+color: #e2e8f0;
+transform: rotate(135deg);
+}
+
+.knob-label {
+text-align: center;
+color: #94a3b8;
+margin-bottom: 18px;
+}
+
+.amount-display {
+text-align: center;
+}
+
+.amount-display .currency {
+display: block;
+color: #94a3b8;
+font-size: 0.95rem;
+margin-bottom: 4px;
+}
+
+.amount-display .amount {
+font-size: 3rem;
+font-weight: 700;
+color: #38bdf8;
+}
+
+.tip-form-panel h2 {
+text-align: left;
+margin-bottom: 24px;
+}
+
+.tip-form-panel label {
+display: block;
+margin-bottom: 8px;
+color: #cbd5e1;
+}
+
+.tip-form-panel input[type="tel"] {
+width: 100%;
+padding: 14px 16px;
+border: none;
+border-radius: 12px;
+margin-bottom: 18px;
+font-size: 1rem;
+}
+
+.preset-row {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 10px;
+margin-bottom: 20px;
+}
+
+.preset {
+padding: 10px;
+border: 1px solid #334155;
+border-radius: 10px;
+background: #0f172a;
+color: #e2e8f0;
+cursor: pointer;
+transition: 0.2s;
+}
+
+.preset:hover,
+.preset.active {
+border-color: #38bdf8;
+color: #38bdf8;
+}
+
+.tip-btn {
+width: 100%;
+padding: 16px;
+font-size: 1rem;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+}
+
+.tip-status {
+min-height: 24px;
+margin-top: 16px;
+font-size: 0.95rem;
+line-height: 1.5;
+}
+
+.tip-status.success {
+color: #4ade80;
+}
+
+.tip-status.error {
+color: #f87171;
+}
+
+.sr-only {
+position: absolute;
+width: 1px;
+height: 1px;
+padding: 0;
+margin: -1px;
+overflow: hidden;
+clip: rect(0, 0, 0, 0);
+border: 0;
+}
+
+@media (max-width: 900px) {
+.tips-layout {
+grid-template-columns: 1fr;
+}
+}
+
+@media (max-width: 480px) {
+.tips-main {
+padding: 100px 5% 60px;
+}
+
+.knob-panel,
+.tip-form-panel {
+padding: 28px 18px;
+}
+
+.knob-wrap {
+width: 180px;
+height: 180px;
+}
+
+.amount-display .amount {
+font-size: 2.4rem;
+}
+
+.preset-row {
+gap: 8px;
+}
+}
